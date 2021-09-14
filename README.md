@@ -29,20 +29,20 @@ Users should be able to:
 
 - My default screen:
 
-![](./screenshot.jpg)
+![](https://raw.githubusercontent.com/vini54/tip-calculator-app/main/sources/screenshot_m.png)
 
 - Full-hd desktop screen:
 
-![](./screenshot.jpg)
+![](https://raw.githubusercontent.com/vini54/tip-calculator-app/main/sources/screenshot_g.png)
 
 - Mobile screen:
 
-![](./screenshot.jpg)
+![](https://raw.githubusercontent.com/vini54/tip-calculator-app/main/sources/screenshot_p.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Front-end Mentor](https://www.frontendmentor.io/solutions/tipcalculator-criado-com-js-e-jquery-_Gxl7Qhb9)
+- Live Site URL: [netlify](https://reverent-stonebraker-281086.netlify.app/)
 
 ## My process
 
