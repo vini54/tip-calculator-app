@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    --color1: #26C0AB;
+    --color2: #00494D;
+    --color3: #5E7A7D;
+    --color4: #7F9C9F;
+    --color5: #C5E4E7;
+    --color6: #F4FAFA;
+    --color7: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+main {
+    width: 925px;
+    height: 500px;
+    padding: 40px;
+    background-color: var(--color7);
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px var(--color5);
+
+    display: flex;
+    gap: 40px;
+}
+.conteiner1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+input[type="number"] {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: var(--color2);
+    text-align: end;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: var(--color6);
+    background-image: url();
+}
+input[type="number"]:focus {
+    border: 2px solid var(--color1);
+}
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"]::placeholder{
+    color: var(--color4);
+    
+    text-align: end;
+    font-size: 20px;
+    font-weight: 700;
+}
+#price {
+    background-image: url(images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 20px;
+}
+#people {
+    background-image: url(images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 20px;
+}
+label {
+    color: var(--color3);
+    font-weight: 700;
+}
+
+.select-tip {
+    width: 100%;
+}
+.tips-btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+.tips-btn > input[type="button"] {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color2);
+    color: var(--color7);
+}
+input[type="button"]:hover {
+    cursor: pointer;
+}
+.tips-btn > input[type="button"]:focus {
+    color: var(--color2);
+    background-color: var(--color1);
+}
+#btn-custom {
+    background-color: var(--color6);
+    color: var(--color3);
+}
+.num-pep > label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.num-pep span.zero {
+    display: none;
+    text-align: end;
+    font-weight: 700;
+    color: red;
+}
+.conteiner-res {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background-color: var(--color2);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.conteiner-res p {
+    color: var(--color7);
+}
+.conteiner-res span {
+    color: var(--color5);
+}
+.conteiner-res aside {
+    color: var(--color1);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.res-txt {
+    font-weight: 700;
+}
+.conteiner-res > div {
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.conteiner-res > div > div {
+    display: flex;
+    justify-content: space-between;
+}
+#reset {
+    padding: 5px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color1);
+    color: var(--color3);
+    opacity: 20%;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 930px) {
+    body {
+        width: auto;
+        height: auto;
+    }
+    main {
+        width: 375px;
+        height: 800px;
+
+        flex-direction: column;
+        gap: 20px;
+    }
+    .conteiner1 {
+        height: 60%;
+        gap: 20px;
+    }
+    .tips-btn {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .conteiner-res {
+        height: 40%;
+    }
+}

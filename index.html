@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <header>
+    <img src="images/logo.svg" alt="logo_splitter">
+  </header>
+  <main>
+    <div class="conteiner1">
+      <div class="price">
+        <label for="price">Bill</label>
+        <input type="number" name="price" id="price" placeholder="0">
+      </div>
+      <div class="select-tip">
+        <label>Select Tip %</label>
+        <div class="tips-btn">
+          <input id="tip5" type="button" value="5%">
+          <input id="tip10" type="button" value="10%">
+          <input id="tip15" type="button" value="15%">
+          <input id="tip25" type="button" value="25%">
+          <input id="tip50" type="button" value="50%">
+          <input id="btn-custom" type="button" value="Custom">
+        </div>
+      </div>
+      <div class="num-pep">
+        <label for="people"><span>Number of People</span><span class="zero">Can't be 0</span></label>
+        <input type="number" name="num-people" id="people" placeholder="0">
+      </div>
+    </div>
+    <div class="conteiner-res">
+      <div>
+        <div>
+          <div class="res-txt"><p>Tip Amount</p>
+            <span>/ person</span></div>
+            <aside id="tipAmount">$0.00</aside>
+        </div>
+        <div>
+          <div class="res-txt"><p>Total</p>
+            <span>/ person</span></div>
+            <aside id="total">$0.00</aside>
+        </div>
+      </div>
+      <input id="reset" type="button" value="Reset">
+    </div>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/vini54" target="_blank">Vinícius Oliveira</a>.
+  </footer>
+</body>
+</html>
